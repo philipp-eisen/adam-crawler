@@ -14,7 +14,7 @@ The output will be a JSON Array of JSON Objects in the following format:
 
 ...
 
-}
+},
 
 ...
 
