@@ -26,7 +26,7 @@ class AdamSpider(scrapy.Spider):
         for section in response.css('.section'):
             html = ' '.join(section.css('.section-body').extract())
             # Adding white space around tags. Helps for example if no spaces are added between <li> oder after <br>
-            # is likely though to add to many white spaces. In this application doesn't hurt thou
+            # is likely though to add to many white spaces. In this application doesn't hurt though
             html = html.replace('>', '> ')
             html = html.replace('<', ' <')
             soup = BeautifulSoup(html)
