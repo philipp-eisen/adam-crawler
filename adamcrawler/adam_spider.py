@@ -12,6 +12,7 @@ class AdamSpider(scrapy.Spider):
 
     def parse(self, response):
         for href in response.css('#index li a::attr(href)'):
+            # ignore links that start with patientinstructions, because they were not relevant for the problem Domain.
             pattern = re.compile('^patientinstructions*')
             if pattern.match(href.extract()) is not None:
                 continue
