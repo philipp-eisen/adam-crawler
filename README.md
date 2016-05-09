@@ -1,4 +1,4 @@
-#ADAM-Crawler
+#A.D.A.M.-Crawler
 
 This small scrapy spider crawls the The A.D.A.M. Medical Encyclopedia which can be found here: https://www.nlm.nih.gov/medlineplus/encyclopedia.html .
 
